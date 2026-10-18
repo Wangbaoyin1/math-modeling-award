@@ -1,0 +1,40 @@
+# aishumo 仓库忽略规则
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 运行/生成物
+图片AI/
+outputs/
+*.log
+*.tmp
+.dsh-pilot/
+
+# LaTeX
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.toc
+*.out
+
+# Node
+node_modules/
+
+# 密钥 / 本地配置
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# 系统
+.DS_Store
+Thumbs.db
+desktop.ini

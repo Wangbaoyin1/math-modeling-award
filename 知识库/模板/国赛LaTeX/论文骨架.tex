@@ -1,0 +1,99 @@
+% 国赛论文主文件（cumcmthesis 模板）—— 标准骨架
+% 编译：xelatex ×2（先复制 cumcmthesis.cls 到本目录；图片复制到本目录或改相对路径）
+% 来源：知识库/模板/国赛LaTeX/
+\documentclass{cumcmthesis}
+
+\title{论文题目：基于……的……研究}
+\tihao{A}                    % 题号 A/B/C/D/E
+\baominghao{参赛队号 12 位}
+\schoolname{学校全称}
+\membera{成员一}
+\memberb{成员二}
+\memberc{成员三}
+\supervisor{指导教师}
+\yearinput{2026}
+\monthinput{09}
+\dayinput{13}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+在正文摘要处填写（800-1000 字，每问给"方法名 + 带单位数值"，无图表）。第一段总述问题+统一框架；其后每问一段，以"针对问题X"开头，含方法+核心数值；结尾总结升华（创新点+检验）。
+\keywords{关键词一 \quad 关键词二 \quad 关键词三}
+\end{abstract}
+
+% 注意：2026 规范要求正文不要目录，切勿使用 \tableofcontents
+
+\section{问题重述}
+（原创语言重述：背景、核心目标、约束；提炼子问题，不复制原题）
+
+\section{问题分析}
+（"总—分"：先整体思路，再各问：关键矛盾→解题思路→核心步骤）
+
+\section{模型假设}
+\begin{enumerate}
+    \item 假设一（合理性依据）……
+    \item 假设二（合理性依据）……
+    % 4-6 条，每条给依据，别过度简化
+\end{enumerate}
+
+\section{符号说明}
+\begin{table}[H]
+\centering
+\caption{主要符号说明}
+\begin{tabular}{ccc}
+\toprule[0.8pt]
+符号 & 含义 & 单位 \\
+\midrule[0.5pt]
+$D$ & 示例变量 & kg \\
+\bottomrule[0.8pt]
+\end{tabular}
+\end{table}
+
+\section{问题一的模型建立与求解}
+\subsection{模型建立}
+（公式用 equation 环境编号，变量先定义后使用）
+\subsection{模型求解}
+（写明数据/算法/软件，关键结果）
+\subsection{结果分析}
+（基础数值解读 + 深层机理 + 直接回应问题）
+\subsection{模型检验}
+（误差/灵敏度/稳健性，按问题需要）
+
+\section{问题二的模型建立与求解}
+\subsection{模型建立}
+……
+\subsection{模型求解}
+……
+\subsection{结果分析}
+……
+
+\section{问题三的模型建立与求解}
+\subsection{模型建立}
+……
+\subsection{模型求解}
+……
+\subsection{结果分析}
+……
+
+\section{问题四的模型建立与求解（若有）}
+……
+
+\section{模型评价}
+\subsection{模型优点}
+（创新性/适用性/效率，结合数据）
+\subsection{模型缺点与改进}
+（假设限制/数据依赖/扩展局限，具体不空泛）
+
+\section{参考文献}
+\begin{thebibliography}{9}
+\bibitem{1} 作者. 题目[J]. 期刊, 年份, 卷(期): 页码.
+\end{thebibliography}
+
+\appendix
+\section{支撑材料说明}
+（代码文件清单、中间结果、补充图表说明；2026 要求若用 AI 需附 AI工具使用详情.pdf）
+
+\end{document}

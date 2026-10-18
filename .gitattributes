@@ -1,0 +1,29 @@
+# 统一换行与文本识别
+* text=auto
+
+# 源码与文档：LF
+*.py    text eol=lf
+*.md    text eol=lf
+*.tex   text eol=lf
+*.cls   text eol=lf
+*.sty   text eol=lf
+*.json  text eol=lf
+*.yml   text eol=lf
+*.yaml  text eol=lf
+*.csv   text eol=lf
+*.cff   text eol=lf
+*.ps1   text eol=crlf
+*.cmd   text eol=crlf
+*.bat   text eol=crlf
+
+# 二进制：不做换行转换
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.webp  binary
+*.pdf   binary
+*.xlsx  binary
+*.docx  binary
+*.pptx  binary
+*.db    binary
+*.zip   binary

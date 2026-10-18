@@ -1,0 +1,7 @@
+# aishumo 运行环境常用依赖（可选安装）
+numpy>=1.24
+scipy>=1.10
+pandas>=2.0
+openpyxl>=3.1
+matplotlib>=3.7
+pyyaml>=6.0
